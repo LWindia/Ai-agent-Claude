@@ -1,26 +1,15 @@
-import { ReactNode, CSSProperties } from 'react'
+import type { ReactNode, CSSProperties } from 'react'
 import { motion } from 'framer-motion'
 import { useSectionScroll } from '../../hooks/useSectionScroll'
 
 interface Props {
   children: ReactNode
   className?: string
-  delay?: number       // stagger offset in ms (applied via CSS delay on children)
+  delay?: number
   style?: CSSProperties
-  /**
-   * speed: controls spring stiffness
-   * 'normal' = default (matches hero feel)
-   * 'slow'   = heavier, more cinematic
-   */
   speed?: 'normal' | 'slow'
 }
 
-/**
- * Universal scroll-linked section wrapper.
- * Same behavior as the hero — translateY + opacity tied 1:1 to scroll.
- * Content is NEVER fully hidden (opacity floor = 0.35).
- * Reversible: scroll up → animation reverses.
- */
 export default function AnimatedSection({
   children,
   className = '',
@@ -42,7 +31,6 @@ export default function AnimatedSection({
         y,
         opacity,
         willChange: 'transform, opacity',
-        // Stagger via CSS transition-delay on the wrapper
         transitionDelay: delay ? `${delay}ms` : undefined,
         ...style,
       }}

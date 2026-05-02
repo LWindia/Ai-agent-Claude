@@ -22,7 +22,7 @@ export default function WhoIsItForSection() {
           </div>
         </AnimatedSection>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {whoIsItFor.map((item, i) => (
+          {whoIsItFor.map((item) => (
             <AnimatedSection key={item.title}>
               <GlassCard glowOnHover className="p-6 flex flex-col gap-4 h-full group">
                 <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:scale-110"

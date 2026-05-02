@@ -1,16 +1,13 @@
-import { useRef, ReactNode } from 'react'
+import type { ReactNode } from 'react'
+import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 
 interface Props {
   children: ReactNode
   className?: string
-  speed?: number  // 0.05–0.15 recommended
+  speed?: number
 }
 
-/**
- * Wraps a section with a subtle scroll-linked translateY.
- * Background elements move slower than content = depth effect.
- */
 export default function ParallaxSection({ children, className = '', speed = 0.06 }: Props) {
   const ref = useRef<HTMLDivElement>(null)
 

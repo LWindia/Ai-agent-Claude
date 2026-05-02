@@ -1,10 +1,8 @@
-import { useScroll, useTransform, MotionValue } from 'framer-motion'
-import { useRef, RefObject } from 'react'
+import type { RefObject } from 'react'
+import type { MotionValue } from 'framer-motion'
+import { useScroll, useTransform } from 'framer-motion'
+import { useRef } from 'react'
 
-/**
- * Returns scroll-linked opacity + translateY for a section element.
- * Values are 1:1 with scroll — no autoplay, no timers.
- */
 export function useScrollReveal(options?: {
   inputRange?: [number, number]
   outputY?: [number, number]
@@ -36,10 +34,6 @@ export function useScrollReveal(options?: {
   return { ref: ref as RefObject<HTMLDivElement>, opacity, y }
 }
 
-/**
- * Parallax hook — element moves at a fraction of scroll speed.
- * speed: 0 = no movement, 1 = full scroll speed, 0.1 = very subtle
- */
 export function useParallax(speed = 0.15): {
   ref: RefObject<HTMLDivElement>
   y: MotionValue<number>

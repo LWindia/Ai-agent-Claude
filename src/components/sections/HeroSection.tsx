@@ -19,7 +19,6 @@ export default function HeroSection() {
   const contentOpacity = useTransform(spring, [0, 0.7], [1, 0])
 
   // Background glow drifts down (opposite direction = depth)
-  const glowY          = useTransform(spring, [0, 1], [0, 80])
   const glowOpacity    = useTransform(spring, [0, 0.8], [1, 0])
 
   // Accent glows move at different speeds for parallax depth
