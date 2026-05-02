@@ -7,15 +7,6 @@ const achievements = [
   { value: '50+', label: 'Enterprise Clients', color: '#38BDF8' },
 ]
 
-const expertise = [
-  'Agentic AI & LLM Systems',
-  'Cloud Architecture (AWS, Azure, GCP)',
-  'DevOps & Platform Engineering',
-  'AI Product Strategy',
-  'Enterprise AI Transformation',
-  'Open Source & Community Building',
-]
-
 export default function MentorSection() {
   return (
     <section className="py-16 px-4 relative overflow-hidden">
@@ -65,7 +56,7 @@ export default function MentorSection() {
                 >
                   {/* Photo frame */}
                   <div
-                    className="relative w-40 h-40 rounded-2xl overflow-hidden flex-shrink-0"
+                    className="relative w-52 h-52 rounded-2xl overflow-hidden flex-shrink-0"
                     style={{
                       border: '2px solid rgba(37,99,235,0.5)',
                       boxShadow: '0 0 30px rgba(37,99,235,0.3)',
@@ -79,7 +70,7 @@ export default function MentorSection() {
                     />
                     {/* Fallback initials */}
                     <div
-                      className="absolute inset-0 flex items-center justify-center text-4xl font-black text-white"
+                      className="absolute inset-0 flex items-center justify-center text-5xl font-black text-white"
                       style={{ background: 'linear-gradient(135deg, #2563EB, #38BDF8)' }}
                     >
                       VD
@@ -94,23 +85,6 @@ export default function MentorSection() {
                       <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
                       <span className="text-text-secondary text-xs">Founder, LinuxWorld India</span>
                     </div>
-                  </div>
-
-                  {/* Expertise tags */}
-                  <div className="flex flex-wrap gap-1.5 justify-center">
-                    {expertise.map((tag) => (
-                      <span
-                        key={tag}
-                        className="text-xs px-2.5 py-1 rounded-full"
-                        style={{
-                          background: 'rgba(37,99,235,0.1)',
-                          border: '1px solid rgba(37,99,235,0.22)',
-                          color: '#9CA3AF',
-                        }}
-                      >
-                        {tag}
-                      </span>
-                    ))}
                   </div>
                 </div>
 
