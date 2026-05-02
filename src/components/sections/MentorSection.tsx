@@ -1,10 +1,10 @@
 import AnimatedSection from '../ui/AnimatedSection'
 
 const achievements = [
-  { value: '15+', label: 'Years in Tech', color: '#2563EB' },
-  { value: '500K+', label: 'Students Trained', color: '#38BDF8' },
-  { value: '200+', label: 'Courses Delivered', color: '#2563EB' },
-  { value: '50+', label: 'Enterprise Clients', color: '#38BDF8' },
+  { value: '10 Lakh+', label: 'Students Mentored', color: '#2563EB' },
+  { value: '23+', label: 'Years Industry Experience', color: '#38BDF8' },
+  { value: '153+', label: 'Tools & Technology', color: '#2563EB' },
+  { value: '4.9/5', label: 'Student Rating', color: '#38BDF8' },
 ]
 
 export default function MentorSection() {
@@ -114,9 +114,9 @@ export default function MentorSection() {
                   {/* Bio */}
                   <p className="text-text-secondary text-sm leading-relaxed">
                     Mr. Vimal Daga is one of India's most respected technology educators and AI practitioners.
-                    With over 15 years of hands-on experience in cloud, DevOps, and AI systems, he has trained
+                    With over 23 years of hands-on experience in cloud, DevOps, and AI systems, he has mentored
                     over{' '}
-                    <span className="text-text-primary font-semibold">500,000+ engineers</span>{' '}
+                    <span className="text-text-primary font-semibold">10 Lakh+ engineers</span>{' '}
                     across India and globally. He is known for making complex AI and cloud concepts practical,
                     industry-relevant, and immediately applicable.
                   </p>
@@ -159,7 +159,7 @@ export default function MentorSection() {
                       ))}
                     </div>
                     <p className="text-text-secondary text-xs">
-                      Trusted by <span className="text-text-primary font-semibold">500,000+</span> engineers worldwide
+                      Trusted by <span className="text-text-primary font-semibold">10 Lakh+</span> engineers worldwide
                     </p>
                   </div>
                 </div>
