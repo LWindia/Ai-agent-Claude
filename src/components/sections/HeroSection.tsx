@@ -112,10 +112,10 @@ export default function HeroSection() {
 
         {/* Headline */}
         <div className="text-center mb-6">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-[0.95] tracking-tight">
-            <span className="block text-text-primary">Become an</span>
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight">
+            <span className="block text-text-primary leading-tight">Become an</span>
             <span
-              className="block mt-2"
+              className="block pb-2"
               style={{
                 background: 'linear-gradient(135deg, #2563EB 0%, #38BDF8 50%, #2563EB 100%)',
                 backgroundSize: '200% auto',
@@ -124,6 +124,7 @@ export default function HeroSection() {
                 backgroundClip: 'text',
                 animation: 'shimmer 5s linear infinite',
                 filter: 'drop-shadow(0 0 30px rgba(56,189,248,0.35))',
+                lineHeight: '1.1',
               }}
             >
               Agentic AI Architect
