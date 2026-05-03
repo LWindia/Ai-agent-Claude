@@ -63,18 +63,10 @@ export default function MentorSection() {
                     }}
                   >
                     <img
-                      src="/mentor.jpg"
+                      src="/Vimal Sir.jpeg"
                       alt="Mr. Vimal Daga"
                       className="w-full h-full object-cover object-top"
-                      onError={(e) => { e.currentTarget.style.display = 'none' }}
                     />
-                    {/* Fallback initials */}
-                    <div
-                      className="absolute inset-0 flex items-center justify-center text-5xl font-black text-white"
-                      style={{ background: 'linear-gradient(135deg, #2563EB, #38BDF8)' }}
-                    >
-                      VD
-                    </div>
                   </div>
 
                   {/* Name & title */}
