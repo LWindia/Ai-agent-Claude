@@ -142,11 +142,17 @@ export default function MentorSection() {
                   {/* Social proof */}
                   <div className="flex items-center gap-3">
                     <div className="flex -space-x-2">
-                      {['A','B','C','D','E'].map(l => (
-                        <div key={l}
-                          className="w-7 h-7 rounded-full border-2 flex items-center justify-center text-xs font-bold text-white"
-                          style={{ background: 'linear-gradient(135deg, #2563EB, #38BDF8)', borderColor: '#0B0F1A' }}>
-                          {l}
+                      {['/s1.jpeg', '/s2.jpeg', '/s3.jpeg', '/s4.jpeg'].map((src, i) => (
+                        <div
+                          key={i}
+                          className="w-8 h-8 rounded-full border-2 overflow-hidden flex-shrink-0"
+                          style={{ borderColor: '#0B0F1A' }}
+                        >
+                          <img
+                            src={src}
+                            alt={`Student ${i + 1}`}
+                            className="w-full h-full object-cover"
+                          />
                         </div>
                       ))}
                     </div>
