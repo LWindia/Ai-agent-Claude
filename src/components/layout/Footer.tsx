@@ -21,6 +21,25 @@ export default function Footer() {
         <p className="text-text-secondary text-xs">
           © {new Date().getFullYear()} LinuxWorld. All rights reserved.
         </p>
+
+        {/* Credit */}
+        <p className="text-text-secondary/40 text-xs">
+          Designed & built by{' '}
+          <a
+            href="https://www.linkedin.com/in/jibbran-ali/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: 'inherit',
+              textDecoration: 'none',
+              cursor: 'pointer',
+            }}
+            onMouseEnter={e => (e.currentTarget.style.color = '#9CA3AF')}
+            onMouseLeave={e => (e.currentTarget.style.color = 'inherit')}
+          >
+            Jibbran Ali
+          </a>
+        </p>
       </div>
     </footer>
   )
