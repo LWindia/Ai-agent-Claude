@@ -85,14 +85,7 @@ export default function HeroSection() {
         }}
       />
 
-      {/* Scan line */}
-      <div
-        className="absolute left-0 right-0 z-0 pointer-events-none"
-        style={{
-          height: '1px', top: '50%',
-          background: 'linear-gradient(90deg, transparent 0%, rgba(56,189,248,0.12) 20%, rgba(56,189,248,0.3) 50%, rgba(56,189,248,0.12) 80%, transparent 100%)',
-        }}
-      />
+      {/* Scan line removed — was overlapping CTA buttons */}
 
       {/* ── MAIN CONTENT — scroll-linked drift ── */}
       <motion.div
