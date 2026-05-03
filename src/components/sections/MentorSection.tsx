@@ -9,7 +9,7 @@ const achievements = [
 
 export default function MentorSection() {
   return (
-    <section className="py-16 px-4 relative overflow-hidden">
+    <section className="py-14 px-4 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px]"
@@ -169,3 +169,5 @@ export default function MentorSection() {
     </section>
   )
 }
+
+

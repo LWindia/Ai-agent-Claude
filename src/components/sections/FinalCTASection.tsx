@@ -4,7 +4,7 @@ import SectionHeading from '../ui/SectionHeading'
 
 export default function FinalCTASection() {
   return (
-    <section className="py-20 px-4 relative overflow-hidden">
+    <section className="py-14 px-4 relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0"
           style={{ background: 'radial-gradient(ellipse at center, rgba(37,99,235,0.1) 0%, transparent 65%)' }} />
@@ -39,3 +39,5 @@ export default function FinalCTASection() {
     </section>
   )
 }
+
+

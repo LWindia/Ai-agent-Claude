@@ -89,7 +89,7 @@ export default function HeroSection() {
 
       {/* ── MAIN CONTENT — scroll-linked drift ── */}
       <motion.div
-        className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20 lg:py-0"
+        className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-14 lg:py-0"
         style={{ y: contentY, opacity: contentOpacity, willChange: 'opacity, transform' }}
       >
         {/* Badge */}
@@ -139,7 +139,7 @@ export default function HeroSection() {
         </div>
 
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
           <Button variant="primary" size="lg" href="#pricing">
             Enroll Now — ₹4,999
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -298,3 +298,5 @@ export default function HeroSection() {
     </section>
   )
 }
+
+

@@ -5,14 +5,14 @@ import { testimonials } from '../../data'
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-16 px-4 relative overflow-hidden">
+    <section className="py-14 px-4 relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px]"
           style={{ background: 'radial-gradient(ellipse, rgba(37,99,235,0.07) 0%, transparent 70%)' }} />
       </div>
       <div className="max-w-7xl mx-auto relative z-10">
         <AnimatedSection>
-          <div className="flex flex-col items-center mb-14">
+          <div className="flex flex-col items-center mb-10">
             <SectionHeading
               label="Testimonials"
               title="From Engineers Who Built With It"
@@ -48,3 +48,5 @@ export default function TestimonialsSection() {
     </section>
   )
 }
+
+

@@ -8,7 +8,7 @@ export default function CurriculumSection() {
   const toggle = (id: number) => setExpanded(prev => (prev === id ? null : id))
 
   return (
-    <section id="curriculum" className="py-20 px-4 relative overflow-hidden">
+    <section id="curriculum" className="py-14 px-4 relative overflow-hidden">
 
       {/* Background glow */}
       <div className="absolute inset-0 pointer-events-none">
@@ -291,3 +291,5 @@ export default function CurriculumSection() {
     </section>
   )
 }
+
+

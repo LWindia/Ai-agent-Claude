@@ -29,8 +29,8 @@ export function useSectionScroll(springConfig = { stiffness: 60, damping: 20 }):
 
   const smooth = useSpring(scrollYProgress, springConfig)
 
-  // translateY: enters from +30px, exits to -20px
-  const y = useTransform(smooth, [0, 0.25, 0.75, 1], ['30px', '0px', '0px', '-20px'])
+  // translateY: enters from +20px, exits to -10px — reduced to prevent spacing gaps
+  const y = useTransform(smooth, [0, 0.25, 0.75, 1], ['20px', '0px', '0px', '-10px'])
 
   // opacity: never fully 0 — floor at 0.35 entering, 0.5 exiting
   const opacity = useTransform(smooth, [0, 0.2, 0.8, 1], [0.35, 1, 1, 0.5])

@@ -49,10 +49,10 @@ export default function HowItWorksSection() {
   const step3Y = useTransform(scrollYProgress, [0.66, 0.76], [20, 0])
 
   return (
-    <section className="py-16 px-4 relative overflow-hidden">
+    <section className="py-14 px-4 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <AnimatedSection>
-          <div className="flex flex-col items-center mb-16 text-center">
+          <div className="flex flex-col items-center mb-10 text-center">
             <SectionHeading
               label="How It Works"
               title="Your Path to AI Mastery"
@@ -148,3 +148,5 @@ export default function HowItWorksSection() {
     </section>
   )
 }
+
+

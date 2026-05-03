@@ -5,14 +5,14 @@ import { outcomes } from '../../data'
 
 export default function OutcomesSection() {
   return (
-    <section id="outcomes" className="py-16 px-4 relative overflow-hidden">
+    <section id="outcomes" className="py-14 px-4 relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px]"
           style={{ background: 'radial-gradient(ellipse, rgba(37,99,235,0.08) 0%, transparent 65%)' }} />
       </div>
       <div className="max-w-7xl mx-auto relative z-10">
         <AnimatedSection>
-          <div className="flex flex-col items-center mb-14">
+          <div className="flex flex-col items-center mb-10">
             <SectionHeading
               label="Outcomes"
               title="What You'll Be Capable Of"
@@ -60,3 +60,5 @@ export default function OutcomesSection() {
     </section>
   )
 }
+
+

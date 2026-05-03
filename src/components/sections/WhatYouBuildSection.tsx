@@ -4,7 +4,7 @@ import { whatYouBuild } from '../../data'
 
 export default function WhatYouBuildSection() {
   return (
-    <section className="py-16 px-4 relative overflow-hidden">
+    <section className="py-14 px-4 relative overflow-hidden">
       {/* Background glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[600px] h-[400px]"
@@ -72,3 +72,5 @@ export default function WhatYouBuildSection() {
     </section>
   )
 }
+
+

@@ -5,14 +5,14 @@ import { whyCourse } from '../../data'
 
 export default function WhyCourseSection() {
   return (
-    <section className="py-16 px-4 relative overflow-hidden">
+    <section className="py-14 px-4 relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px]"
           style={{ background: 'radial-gradient(circle, rgba(56,189,248,0.06) 0%, transparent 70%)' }} />
       </div>
       <div className="max-w-7xl mx-auto relative z-10">
         <AnimatedSection>
-          <div className="flex flex-col items-center mb-14">
+          <div className="flex flex-col items-center mb-10">
             <SectionHeading
               label="Why This Course"
               title="Engineered for the AI Era"
@@ -41,3 +41,5 @@ export default function WhyCourseSection() {
     </section>
   )
 }
+
+

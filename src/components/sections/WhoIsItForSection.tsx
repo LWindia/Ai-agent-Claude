@@ -5,14 +5,14 @@ import { whoIsItFor } from '../../data'
 
 export default function WhoIsItForSection() {
   return (
-    <section className="py-16 px-4 relative overflow-hidden">
+    <section className="py-14 px-4 relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px]"
           style={{ background: 'radial-gradient(ellipse, rgba(37,99,235,0.07) 0%, transparent 65%)' }} />
       </div>
       <div className="max-w-7xl mx-auto relative z-10">
         <AnimatedSection>
-          <div className="flex flex-col items-center mb-14">
+          <div className="flex flex-col items-center mb-10">
             <SectionHeading
               label="Who This Is For"
               title="Built for the Builders"
@@ -43,3 +43,5 @@ export default function WhoIsItForSection() {
     </section>
   )
 }
+
+

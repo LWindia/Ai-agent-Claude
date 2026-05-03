@@ -17,14 +17,14 @@ const features = [
 
 export default function PricingSection() {
   return (
-    <section id="pricing" className="py-16 px-4 relative overflow-hidden">
+    <section id="pricing" className="py-14 px-4 relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px]"
           style={{ background: 'radial-gradient(ellipse, rgba(37,99,235,0.1) 0%, transparent 70%)' }} />
       </div>
       <div className="max-w-7xl mx-auto relative z-10">
         <AnimatedSection>
-          <div className="flex flex-col items-center mb-14">
+          <div className="flex flex-col items-center mb-10">
             <SectionHeading
               label="Pricing"
               title="One Investment. Lifetime Access."
@@ -92,3 +92,5 @@ export default function PricingSection() {
     </section>
   )
 }
+
+
