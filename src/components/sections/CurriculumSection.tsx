@@ -90,13 +90,26 @@ export default function CurriculumSection() {
 
             <div className="flex items-center gap-8 mt-8 pt-8 border-t border-white/6 w-full max-w-lg justify-center">
               {[
-                { value: '60+', label: 'Hours of content', color: '#2563EB' },
-                { value: '12', label: 'Deep modules', color: '#38BDF8' },
-                { value: '100%', label: 'Hands-on builds', color: '#2563EB' },
+                { value: '60+', label: 'Hours of content' },
+                { value: '12', label: 'Deep modules' },
+                { value: '100%', label: 'Hands-on builds' },
               ].map((stat, i) => (
                 <div key={stat.label} className="flex items-center gap-8">
                   <div className="text-center">
-                    <div className="text-2xl font-black" style={{ color: stat.color }}>{stat.value}</div>
+                    <div
+                      className="text-2xl font-black"
+                      style={{
+                        background: 'linear-gradient(135deg, #2563EB 0%, #38BDF8 50%, #2563EB 100%)',
+                        backgroundSize: '200% auto',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        backgroundClip: 'text',
+                        animation: 'shimmer 4s linear infinite',
+                        filter: 'drop-shadow(0 0 8px rgba(56,189,248,0.4))',
+                      }}
+                    >
+                      {stat.value}
+                    </div>
                     <div className="text-text-secondary/60 text-xs mt-0.5">{stat.label}</div>
                   </div>
                   {i < 2 && <div className="w-px h-8 bg-white/8" />}
