@@ -126,9 +126,8 @@ export default function HeroSection() {
                 filter: 'drop-shadow(0 0 30px rgba(56,189,248,0.35))',
               }}
             >
-              Agentic AI
+              Agentic AI Architect
             </span>
-            <span className="block text-text-primary mt-1">Architect</span>
           </h1>
         </div>
 
