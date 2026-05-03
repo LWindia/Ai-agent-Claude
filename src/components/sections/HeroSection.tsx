@@ -254,8 +254,8 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Social proof */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-10">
+        {/* Social proof — hidden on mobile */}
+        <div className="hidden sm:flex flex-col sm:flex-row items-center justify-center gap-6 mt-10">
           <div className="flex items-center gap-3">
             <div className="flex -space-x-2">
               {['SC','MR','PN','AK','JL'].map(i => (
