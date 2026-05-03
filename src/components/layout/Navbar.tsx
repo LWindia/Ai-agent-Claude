@@ -27,9 +27,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center shadow-glow-sm group-hover:shadow-glow-primary transition-all duration-300">
-              <span className="text-white text-sm font-bold">A</span>
-            </div>
+            <img
+              src="/LW_White_gvs6tv.svg"
+              alt="LinuxWorld"
+              className="h-8 w-auto group-hover:opacity-80 transition-opacity duration-200"
+            />
             <span className="text-text-primary font-semibold text-sm hidden sm:block">
               Agentic AI Architect™
             </span>
