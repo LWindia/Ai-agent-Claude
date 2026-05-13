@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion, useScroll, useTransform, MotionValue } from 'framer-motion'
 
 // Three rows of tech terms — alternating scroll directions
 const row1 = [
@@ -23,17 +23,17 @@ interface MarqueeRowProps {
   items: string[]
   direction: 'left' | 'right'
   speed?: number
-  scrollY?: ReturnType<typeof useTransform>
+  scrollX?: MotionValue<number>
 }
 
-function MarqueeRow({ items, direction, speed = 35, scrollY }: MarqueeRowProps) {
+function MarqueeRow({ items, direction, speed = 35, scrollX }: MarqueeRowProps) {
   const repeated = repeat(items, 5)
   const dur = repeated.length * (speed / items.length)
 
   return (
     <motion.div
       className="flex items-center gap-0 overflow-hidden w-full"
-      style={scrollY ? { x: scrollY } : {}}
+      style={scrollX ? { x: scrollX } : {}}
     >
       <motion.div
         className="flex items-center gap-0 flex-shrink-0"
@@ -67,10 +67,10 @@ export default function TechStackSection() {
     offset: ['start end', 'end start'],
   })
 
-  // Scroll-linked horizontal nudge — rows shift slightly as you scroll
-  const xRow1 = useTransform(scrollYProgress, [0, 1], ['0px', '-60px'])
-  const xRow2 = useTransform(scrollYProgress, [0, 1], ['0px', '60px'])
-  const xRow3 = useTransform(scrollYProgress, [0, 1], ['0px', '-40px'])
+  // Scroll-linked horizontal nudge — rows shift slightly as you scroll (numbers, not strings)
+  const xRow1 = useTransform(scrollYProgress, [0, 1], [0, -60])
+  const xRow2 = useTransform(scrollYProgress, [0, 1], [0, 60])
+  const xRow3 = useTransform(scrollYProgress, [0, 1], [0, -40])
 
   return (
     <section
@@ -105,13 +105,13 @@ export default function TechStackSection() {
 
       <div className="flex flex-col gap-4">
         {/* Row 1 — scrolls left, nudges left on scroll */}
-        <MarqueeRow items={row1} direction="left" speed={40} scrollY={xRow1} />
+        <MarqueeRow items={row1} direction="left" speed={40} scrollX={xRow1} />
 
         {/* Row 2 — scrolls right, nudges right on scroll */}
-        <MarqueeRow items={row2} direction="right" speed={50} scrollY={xRow2} />
+        <MarqueeRow items={row2} direction="right" speed={50} scrollX={xRow2} />
 
         {/* Row 3 — scrolls left, nudges left on scroll */}
-        <MarqueeRow items={row3} direction="left" speed={45} scrollY={xRow3} />
+        <MarqueeRow items={row3} direction="left" speed={45} scrollX={xRow3} />
       </div>
     </section>
   )

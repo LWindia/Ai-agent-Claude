@@ -159,7 +159,7 @@ export default function HowItWorksSection() {
               { value: '20', label: 'Days of Learning' },
               { value: '40h+', label: 'Hands-On Labs' },
               { value: '100%', label: 'Practical Output' },
-            ].map((stat, i) => (
+            ].map((stat) => (
               <div key={stat.label} className="flex flex-col items-center gap-1">
                 <div
                   className="text-2xl sm:text-3xl font-black"
