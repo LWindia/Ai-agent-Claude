@@ -32,7 +32,7 @@ export default function FinalCTASection() {
               </Button>
               <Button variant="secondary" size="lg" href="#curriculum">Explore Curriculum</Button>
             </div>
-            <p className="text-text-secondary/60 text-sm">Secure payment · Lifetime access · Batch starts 15 June 2026</p>
+            <p className="text-text-secondary/60 text-sm">Secure payment · Batch starts 15 June 2026</p>
           </div>
         </AnimatedSection>
       </div>

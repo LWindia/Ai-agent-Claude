@@ -13,7 +13,6 @@ const features = [
   'Cloud cost optimization strategies',
   'Claude Code for DevOps engineering',
   'Enterprise AI-native DevOps architecture',
-  'Lifetime access & updates',
   'Certificate of completion',
 ]
 
@@ -29,8 +28,8 @@ export default function PricingSection() {
           <div className="flex flex-col items-center mb-10">
             <SectionHeading
               label="Pricing"
-              title="One Investment. Lifetime Access."
-              highlight="Lifetime Access."
+              title="Learn Once. Grow Continuously."
+              highlight="Grow Continuously."
               subtitle="Everything you need to become an AI-native DevOps engineer."
             />
           </div>
@@ -88,7 +87,7 @@ export default function PricingSection() {
                       style={{ background: 'rgba(217,119,87,0.1)', border: '1px solid rgba(217,119,87,0.25)', color: '#D97757' }}>
                       53% OFF
                     </span>
-                    <p className="text-text-secondary text-sm">+ Taxes · One-time payment · Lifetime access</p>
+                    <p className="text-text-secondary text-sm">+ Taxes · One-time payment</p>
                   </div>
                 </div>
 
@@ -118,7 +117,7 @@ export default function PricingSection() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </Button>
-                <p className="text-center text-text-secondary text-xs mt-4">Secure payment · Instant access · Batch starts 15 June 2026</p>
+                <p className="text-center text-text-secondary text-xs mt-4">Secure payment · Batch starts 15 June 2026</p>
               </div>
             </div>
           </div>
