@@ -24,15 +24,15 @@ export default function FinalCTASection() {
               subtitle="Join 2,400+ engineers who are using Claude to automate DevOps, ship faster, and operate smarter. The AI-native DevOps era is here — be ahead of it."
             />
             <div className="flex flex-wrap gap-4 justify-center mt-2">
-              <Button variant="primary" size="lg" href="#pricing">
-                Join Now
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <Button variant="primary" size="lg" href="#pricing" aria-label="Enroll in Claude for DevOps – ₹6,999 + taxes">
+                Enroll Now — ₹6,999 + Taxes
+                <svg aria-hidden="true" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
               </Button>
               <Button variant="secondary" size="lg" href="#curriculum">Explore Curriculum</Button>
             </div>
-            <p className="text-text-secondary/60 text-sm">Secure payment · Lifetime access · Start immediately</p>
+            <p className="text-text-secondary/60 text-sm">Secure payment · Lifetime access · Batch starts 15 June 2026</p>
           </div>
         </AnimatedSection>
       </div>
