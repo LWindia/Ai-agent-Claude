@@ -7,6 +7,7 @@ interface Props {
   href?: string
   className?: string
   size?: 'sm' | 'md' | 'lg'
+  'aria-label'?: string
 }
 
 export default function Button({
@@ -16,6 +17,7 @@ export default function Button({
   href,
   className = '',
   size = 'md',
+  'aria-label': ariaLabel,
 }: Props) {
   const sizeClasses = {
     sm: 'px-4 py-2 text-sm',
@@ -32,14 +34,14 @@ export default function Button({
   const variantClasses =
     variant === 'primary'
       ? `bg-primary text-white
-         shadow-[0_0_20px_rgba(37,99,235,0.4)]
-         hover:shadow-[0_0_35px_rgba(37,99,235,0.7)]
-         hover:scale-[1.03] hover:bg-blue-500
+         shadow-[0_0_20px_rgba(217,119,87,0.4)]
+         hover:shadow-[0_0_35px_rgba(217,119,87,0.7)]
+         hover:scale-[1.03] hover:bg-[#C4623E]
          active:scale-[0.98]`
       : `bg-transparent text-text-primary
-         border border-white/20
-         hover:border-accent/60 hover:text-accent
-         hover:shadow-[0_0_15px_rgba(56,189,248,0.2)]
+         border border-[#B1ADA1]/50
+         hover:border-primary/60 hover:text-primary
+         hover:shadow-[0_0_15px_rgba(217,119,87,0.2)]
          hover:scale-[1.02]
          active:scale-[0.98]`
 
@@ -47,14 +49,14 @@ export default function Button({
 
   if (href) {
     return (
-      <a href={href} className={classes}>
+      <a href={href} className={classes} aria-label={ariaLabel}>
         {children}
       </a>
     )
   }
 
   return (
-    <button onClick={onClick} className={classes}>
+    <button onClick={onClick} className={classes} aria-label={ariaLabel}>
       {children}
     </button>
   )

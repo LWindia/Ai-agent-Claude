@@ -4,13 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        'bg-base': '#0B0F1A',
-        'primary': '#2563EB',
-        'accent': '#38BDF8',
-        'text-primary': '#E5E7EB',
-        'text-secondary': '#9CA3AF',
-        'surface': '#111827',
-        'surface-2': '#1E293B',
+        'bg-base': '#F4F3EE',
+        'primary': '#D97757',
+        'accent': '#D97757',
+        'text-primary': '#2C2A26',
+        'text-secondary': '#6B6560',
+        'surface': '#ECEAE3',
+        'surface-2': '#E4E2DA',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
@@ -37,8 +37,8 @@ export default {
           '50%': { transform: 'translateY(-14px)' },
         },
         glowPulse: {
-          '0%, 100%': { boxShadow: '0 0 20px rgba(37,99,235,0.3)' },
-          '50%': { boxShadow: '0 0 45px rgba(37,99,235,0.7)' },
+          '0%, 100%': { boxShadow: '0 0 20px rgba(217,119,87,0.3)' },
+          '50%': { boxShadow: '0 0 45px rgba(217,119,87,0.7)' },
         },
         drawLine: {
           '0%': { strokeDashoffset: '1000' },
@@ -58,10 +58,10 @@ export default {
         'heavy': '24px',
       },
       boxShadow: {
-        'glow-primary': '0 0 25px rgba(37,99,235,0.5)',
-        'glow-accent': '0 0 25px rgba(56,189,248,0.4)',
-        'glow-sm': '0 0 12px rgba(37,99,235,0.3)',
-        'card': '0 4px 24px rgba(0,0,0,0.4)',
+        'glow-primary': '0 0 25px rgba(217,119,87,0.5)',
+        'glow-accent': '0 0 25px rgba(217,119,87,0.4)',
+        'glow-sm': '0 0 12px rgba(217,119,87,0.3)',
+        'card': '0 4px 24px rgba(0,0,0,0.08)',
       },
     },
   },

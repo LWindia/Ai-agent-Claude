@@ -23,7 +23,7 @@ export default function SectionHeading({ label, title, highlight, subtitle, alig
     return (
       <>
         {title.slice(0, idx)}
-        <span style={{ color: '#38BDF8', textShadow: '0 0 20px rgba(56,189,248,0.3)' }}>
+        <span style={{ color: '#D97757', textShadow: '0 0 20px rgba(217,119,87,0.3)' }}>
           {highlight}
         </span>
         {title.slice(idx + highlight.length)}
@@ -34,9 +34,9 @@ export default function SectionHeading({ label, title, highlight, subtitle, alig
   return (
     <div className={`flex flex-col gap-3 ${alignClass}`}>
       {label && (
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-accent/25 bg-accent/5 w-fit">
-          <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-          <span className="text-accent text-xs font-semibold tracking-[0.18em] uppercase">{label}</span>
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/25 bg-primary/5 w-fit">
+          <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+          <span className="text-primary text-xs font-semibold tracking-[0.18em] uppercase">{label}</span>
         </div>
       )}
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-text-primary leading-tight tracking-tight">

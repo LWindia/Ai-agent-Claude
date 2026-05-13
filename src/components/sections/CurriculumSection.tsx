@@ -8,277 +8,290 @@ export default function CurriculumSection() {
   const toggle = (id: number) => setExpanded(prev => (prev === id ? null : id))
 
   return (
-    <section id="curriculum" className="py-14 px-4 relative overflow-hidden">
+    <section id="curriculum" aria-label="20-Day Course Curriculum Timeline" className="py-20 px-4 relative overflow-hidden">
 
       {/* Background glow */}
-      <div className="absolute inset-0 pointer-events-none">
+      <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
         <div
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[500px]"
-          style={{ background: 'radial-gradient(ellipse, rgba(37,99,235,0.1) 0%, transparent 65%)' }}
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[600px]"
+          style={{ background: 'radial-gradient(ellipse, rgba(217,119,87,0.07) 0%, transparent 65%)' }}
         />
       </div>
 
-      {/* Faint grid */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          backgroundImage: `
-            linear-gradient(rgba(37,99,235,0.04) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(37,99,235,0.04) 1px, transparent 1px)
-          `,
-          backgroundSize: '64px 64px',
-        }}
-      />
-
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-5xl mx-auto relative z-10">
 
         {/* ── HEADING ── */}
         <AnimatedSection>
-          <div className="flex flex-col items-center mb-10 text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-accent/25 bg-accent/5 mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-              <span className="text-accent text-xs font-semibold tracking-[0.18em] uppercase">Full Curriculum</span>
+          <div className="flex flex-col items-center mb-16 text-center">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/25 bg-primary/5 mb-6">
+              <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+              <span className="text-primary text-xs font-semibold tracking-[0.18em] uppercase">Full Program</span>
             </div>
 
-            <div className="relative mb-4">
-              <div
-                className="absolute inset-0 pointer-events-none"
+            <h2 className="font-black tracking-tight mb-4" style={{ lineHeight: 1 }}>
+              <span
+                className="block"
                 style={{
-                  background: 'radial-gradient(ellipse at center, rgba(37,99,235,0.25) 0%, transparent 60%)',
-                  filter: 'blur(40px)',
+                  background: 'linear-gradient(135deg, #D97757 0%, #C4623E 50%, #D97757 100%)',
+                  backgroundSize: '200% auto',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  animation: 'shimmer 4s linear infinite, headingGlow 3s ease-in-out infinite',
+                  fontSize: 'clamp(4rem, 12vw, 9rem)',
+                  lineHeight: '1.05',
+                  paddingBottom: '0.05em',
+                  display: 'block',
                 }}
-              />
-              <h2 className="relative font-black leading-none tracking-tight">
-                <span
-                  className="block"
-                  style={{
-                    background: 'linear-gradient(135deg, #2563EB 0%, #38BDF8 50%, #2563EB 100%)',
-                    backgroundSize: '200% auto',
-                    WebkitBackgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
-                    backgroundClip: 'text',
-                    animation: 'shimmer 4s linear infinite',
-                    filter: 'drop-shadow(0 0 40px rgba(56,189,248,0.5))',
-                    fontSize: 'clamp(5rem, 15vw, 12rem)',
-                    lineHeight: '0.9',
-                  }}
-                >
-                  12
-                </span>
-                <span className="block text-text-primary mt-2" style={{ fontSize: 'clamp(2rem, 6vw, 5rem)' }}>
-                  Modules.
-                </span>
-              </h2>
-            </div>
-
-            <div className="flex items-center gap-4 mb-6">
-              <div className="flex-1 h-px max-w-[80px] sm:max-w-[140px]"
-                style={{ background: 'linear-gradient(90deg, transparent, rgba(56,189,248,0.5))' }} />
-              <span className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight"
-                style={{ color: '#38BDF8', textShadow: '0 0 20px rgba(56,189,248,0.4)' }}>
-                One Complete System.
+              >
+                20 Days
               </span>
-              <div className="flex-1 h-px max-w-[80px] sm:max-w-[140px]"
-                style={{ background: 'linear-gradient(90deg, rgba(56,189,248,0.5), transparent)' }} />
-            </div>
+              <span className="block text-text-primary mt-3" style={{ fontSize: 'clamp(1.5rem, 4vw, 3rem)' }}>
+                One Complete DevOps System.
+              </span>
+            </h2>
 
-            <p className="text-text-secondary text-base sm:text-lg max-w-2xl leading-relaxed">
+            <p className="text-text-secondary text-base sm:text-lg max-w-2xl leading-relaxed mt-4">
               A precision-engineered path from AI fundamentals to{' '}
-              <span className="text-text-primary font-medium">production-grade agentic systems</span>.
-              Every module builds on the last.
+              <span className="text-text-primary font-medium">production-grade AI-native DevOps operations</span>.
+              Every day builds on the last.
             </p>
 
-            <div className="flex items-center gap-8 mt-8 pt-8 border-t border-white/6 w-full max-w-lg justify-center">
+            {/* Stats */}
+            <div className="flex items-center gap-10 mt-10 pt-8 border-t border-black/10 w-full max-w-md justify-center">
               {[
-                { value: '60+', label: 'Hours of content' },
-                { value: '12', label: 'Deep modules' },
-                { value: '100%', label: 'Hands-on builds' },
+                { value: '40+', label: 'Hours' },
+                { value: '20', label: 'Days' },
+                { value: '100%', label: 'Hands-on' },
               ].map((stat, i) => (
-                <div key={stat.label} className="flex items-center gap-8">
+                <div key={stat.label} className="flex items-center gap-10">
                   <div className="text-center">
                     <div
                       className="text-2xl font-black"
                       style={{
-                        background: 'linear-gradient(135deg, #2563EB 0%, #38BDF8 50%, #2563EB 100%)',
-                        backgroundSize: '200% auto',
+                        background: 'linear-gradient(135deg, #D97757, #C4623E)',
                         WebkitBackgroundClip: 'text',
                         WebkitTextFillColor: 'transparent',
                         backgroundClip: 'text',
-                        animation: 'shimmer 4s linear infinite',
-                        filter: 'drop-shadow(0 0 8px rgba(56,189,248,0.4))',
                       }}
                     >
                       {stat.value}
                     </div>
-                    <div className="text-text-secondary/60 text-xs mt-0.5">{stat.label}</div>
+                    <div className="text-text-secondary text-xs mt-0.5">{stat.label}</div>
                   </div>
-                  {i < 2 && <div className="w-px h-8 bg-white/8" />}
+                  {i < 2 && <div className="w-px h-8 bg-black/15" />}
                 </div>
               ))}
             </div>
           </div>
         </AnimatedSection>
 
-        {/* ── MODULE ACCORDION LIST ── */}
-        <div className="flex flex-col gap-3">
-          {curriculum.map((mod, i) => {
-            const isOpen = expanded === mod.id
-            return (
-              <AnimatedSection key={mod.id} delay={i * 35}>
-                <div
-                  className="rounded-2xl overflow-hidden transition-all duration-300"
-                  style={{
-                    background: isOpen
-                      ? 'linear-gradient(135deg, rgba(37,99,235,0.12) 0%, rgba(56,189,248,0.05) 100%)'
-                      : 'rgba(255,255,255,0.03)',
-                    border: isOpen
-                      ? '1px solid rgba(37,99,235,0.4)'
-                      : '1px solid rgba(255,255,255,0.06)',
-                    boxShadow: isOpen
-                      ? '0 0 40px rgba(37,99,235,0.15), 0 8px 32px rgba(0,0,0,0.3)'
-                      : '0 2px 12px rgba(0,0,0,0.2)',
-                  }}
-                >
-                  {/* ── ROW HEADER (always visible) ── */}
-                  <button
-                    onClick={() => toggle(mod.id)}
-                    className="w-full flex items-center gap-5 px-6 py-5 text-left group cursor-pointer"
-                    aria-expanded={isOpen}
-                  >
-                    {/* Module number */}
-                    <div
-                      className="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center font-black text-sm transition-all duration-300"
-                      style={{
-                        background: isOpen
-                          ? 'linear-gradient(135deg, rgba(37,99,235,0.4), rgba(56,189,248,0.2))'
-                          : 'rgba(37,99,235,0.1)',
-                        border: isOpen
-                          ? '1px solid rgba(56,189,248,0.4)'
-                          : '1px solid rgba(37,99,235,0.2)',
-                        color: isOpen ? '#38BDF8' : '#2563EB',
-                        boxShadow: isOpen ? '0 0 16px rgba(56,189,248,0.25)' : 'none',
-                        fontFamily: 'monospace',
-                      }}
-                    >
-                      {mod.module}
-                    </div>
+        {/* ── TIMELINE ── */}
+        <div className="relative">
 
-                    {/* Title */}
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-3 flex-wrap">
-                        <span
-                          className="text-xs font-semibold tracking-widest uppercase transition-colors duration-200"
-                          style={{ color: isOpen ? '#38BDF8' : 'rgba(156,163,175,0.5)' }}
-                        >
-                          Module {mod.module}
-                        </span>
-                        {isOpen && (
-                          <span
-                            className="text-xs px-2 py-0.5 rounded-full font-semibold"
-                            style={{
-                              background: 'rgba(56,189,248,0.1)',
-                              border: '1px solid rgba(56,189,248,0.2)',
-                              color: '#38BDF8',
-                            }}
-                          >
-                            {mod.topics.length} topics
-                          </span>
-                        )}
-                      </div>
-                      <h3
-                        className="text-base sm:text-lg font-bold mt-0.5 transition-colors duration-200 leading-snug"
-                        style={{ color: isOpen ? '#ffffff' : '#E5E7EB' }}
-                      >
-                        {mod.title}
-                      </h3>
-                    </div>
+          {/* Vertical spine line */}
+          <div
+            aria-hidden="true"
+            className="absolute left-[39px] top-0 bottom-0 w-px"
+            style={{
+              background: 'linear-gradient(180deg, transparent 0%, rgba(217,119,87,0.4) 5%, rgba(217,119,87,0.4) 95%, transparent 100%)',
+            }}
+          />
 
-                    {/* Expand icon */}
-                    <div
-                      className="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center transition-all duration-300"
-                      style={{
-                        background: isOpen ? 'rgba(37,99,235,0.2)' : 'rgba(255,255,255,0.04)',
-                        border: isOpen ? '1px solid rgba(37,99,235,0.4)' : '1px solid rgba(255,255,255,0.08)',
-                        transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
-                      }}
-                    >
-                      <svg
-                        className="w-4 h-4"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        style={{ color: isOpen ? '#38BDF8' : '#9CA3AF' }}
-                      >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                      </svg>
-                    </div>
-                  </button>
+          <div className="flex flex-col gap-0">
+            {curriculum.map((mod, i) => {
+              const isOpen = expanded === mod.id
+              return (
+                <AnimatedSection key={mod.id} delay={i * 40}>
+                  <div className="relative flex gap-6 pb-4">
 
-                  {/* ── EXPANDED CONTENT ── */}
-                  <div
-                    style={{
-                      maxHeight: isOpen ? '1200px' : '0px',
-                      overflow: 'hidden',
-                      transition: 'max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1)',
-                    }}
-                  >
-                    <div className="px-6 pb-6">
-                      {/* Top divider */}
-                      <div
-                        className="mb-6 h-px"
+                    {/* ── TIMELINE NODE ── */}
+                    <div className="flex-shrink-0 flex flex-col items-center" style={{ width: 80 }}>
+                      {/* Day badge */}
+                      <button
+                        onClick={() => toggle(mod.id)}
+                        aria-expanded={isOpen}
+                        aria-controls={`curriculum-day-${mod.id}`}
+                        aria-label={`${isOpen ? 'Collapse' : 'Expand'} Day ${mod.module}: ${mod.title}`}
+                        className="relative z-10 w-[52px] h-[52px] rounded-2xl flex flex-col items-center justify-center cursor-pointer transition-all duration-300 select-none"
                         style={{
-                          background: 'linear-gradient(90deg, rgba(37,99,235,0.5), rgba(56,189,248,0.3), transparent)',
+                          background: isOpen
+                            ? 'linear-gradient(135deg, #D97757, #C4623E)'
+                            : 'rgba(255,255,255,0.95)',
+                          border: isOpen
+                            ? '2px solid #D97757'
+                            : '2px solid rgba(217,119,87,0.3)',
+                          boxShadow: isOpen
+                            ? '0 0 0 4px rgba(217,119,87,0.15), 0 4px 16px rgba(217,119,87,0.3)'
+                            : '0 2px 8px rgba(0,0,0,0.08)',
+                          transform: isOpen ? 'scale(1.08)' : 'scale(1)',
                         }}
-                      />
+                      >
+                        <span
+                          className="text-[10px] font-bold tracking-widest uppercase leading-none"
+                          style={{ color: isOpen ? 'rgba(255,255,255,0.8)' : '#B1ADA1' }}
+                        >
+                          DAY
+                        </span>
+                        <span
+                          className="text-base font-black leading-none mt-0.5"
+                          style={{ color: isOpen ? '#fff' : '#D97757', fontFamily: 'monospace' }}
+                        >
+                          {mod.module}
+                        </span>
+                      </button>
 
-                      {/* Topics grid */}
-                      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                        {mod.topics.map((topic, ti) => (
-                          <div
-                            key={ti}
-                            className="rounded-xl p-4 flex flex-col gap-3"
-                            style={{
-                              background: 'rgba(255,255,255,0.03)',
-                              border: '1px solid rgba(255,255,255,0.06)',
-                            }}
-                          >
-                            {/* Topic title */}
-                            <div className="flex items-start gap-2.5">
-                              <div
-                                className="mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0"
-                                style={{
-                                  background: ti === 0 ? '#38BDF8' : '#2563EB',
-                                  boxShadow: ti === 0 ? '0 0 6px rgba(56,189,248,0.7)' : '0 0 6px rgba(37,99,235,0.7)',
-                                }}
-                              />
-                              <span className="text-text-primary text-sm font-semibold leading-snug">
-                                {topic.title}
-                              </span>
+                      {/* Connector dot below badge (not on last item) */}
+                      {i < curriculum.length - 1 && (
+                        <div
+                          className="w-1.5 h-1.5 rounded-full mt-3"
+                          style={{
+                            background: isOpen ? '#D97757' : 'rgba(217,119,87,0.3)',
+                            boxShadow: isOpen ? '0 0 8px rgba(217,119,87,0.5)' : 'none',
+                          }}
+                        />
+                      )}
+                    </div>
+
+                    {/* ── CONTENT CARD ── */}
+                    <div className="flex-1 min-w-0 pb-2">
+                      {/* Header row — always visible */}
+                      <button
+                        onClick={() => toggle(mod.id)}
+                        aria-expanded={isOpen}
+                        aria-controls={`curriculum-day-${mod.id}`}
+                        aria-label={`${isOpen ? 'Collapse' : 'Expand'} Day ${mod.module}: ${mod.title}`}
+                        className="w-full text-left group cursor-pointer"
+                      >
+                        <div
+                          className="rounded-2xl px-5 py-4 transition-all duration-300"
+                          style={{
+                            background: isOpen
+                              ? 'linear-gradient(135deg, rgba(217,119,87,0.1) 0%, rgba(196,98,62,0.04) 100%)'
+                              : 'rgba(255,255,255,0.9)',
+                            border: isOpen
+                              ? '1.5px solid rgba(217,119,87,0.45)'
+                              : '1.5px solid rgba(177,173,161,0.35)',
+                            boxShadow: isOpen
+                              ? '0 4px 24px rgba(217,119,87,0.12)'
+                              : '0 2px 8px rgba(0,0,0,0.05)',
+                          }}
+                        >
+                          <div className="flex items-center justify-between gap-4">
+                            <div className="flex-1 min-w-0">
+                              {isOpen && (
+                                <div className="mb-1">
+                                  <span
+                                    className="text-xs px-2 py-0.5 rounded-full font-semibold"
+                                    style={{
+                                      background: 'rgba(217,119,87,0.12)',
+                                      border: '1px solid rgba(217,119,87,0.25)',
+                                      color: '#D97757',
+                                    }}
+                                  >
+                                    {mod.topics.length} topics
+                                  </span>
+                                </div>
+                              )}
+                              <h3
+                                className="text-base sm:text-lg font-bold leading-snug"
+                                style={{ color: '#2C2A26' }}
+                              >
+                                {mod.title}
+                              </h3>
                             </div>
 
-                            {/* Points */}
-                            <ul className="flex flex-col gap-1.5 pl-4">
-                              {topic.points.map((point, pi) => (
-                                <li key={pi} className="flex items-start gap-2">
-                                  <span
-                                    className="mt-1.5 w-1 h-1 rounded-full flex-shrink-0"
-                                    style={{ background: 'rgba(156,163,175,0.4)' }}
-                                  />
-                                  <span className="text-text-secondary text-xs leading-relaxed">
-                                    {point}
-                                  </span>
-                                </li>
-                              ))}
-                            </ul>
+                            {/* Chevron */}
+                            <div
+                              className="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center transition-all duration-300"
+                              style={{
+                                background: isOpen ? 'rgba(217,119,87,0.15)' : 'rgba(177,173,161,0.12)',
+                                border: isOpen ? '1px solid rgba(217,119,87,0.3)' : '1px solid rgba(177,173,161,0.2)',
+                                transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
+                              }}
+                            >
+                              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                style={{ color: isOpen ? '#D97757' : '#B1ADA1' }}>
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                              </svg>
+                            </div>
                           </div>
-                        ))}
+                        </div>
+                      </button>
+
+                      {/* ── EXPANDED TOPICS ── */}
+                      <div
+                        id={`curriculum-day-${mod.id}`}
+                        role="region"
+                        aria-label={`Day ${mod.module} topics: ${mod.title}`}
+                        style={{
+                          maxHeight: isOpen ? '1400px' : '0px',
+                          overflow: 'hidden',
+                          transition: 'max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
+                        }}
+                      >
+                        <div
+                          className="mt-2 rounded-2xl px-5 py-5"
+                          style={{
+                            background: 'rgba(255,255,255,0.75)',
+                            border: '1.5px solid rgba(217,119,87,0.2)',
+                          }}
+                        >
+                          {/* Divider */}
+                          <div
+                            className="mb-5 h-px"
+                            style={{
+                              background: 'linear-gradient(90deg, rgba(217,119,87,0.5), rgba(196,98,62,0.2), transparent)',
+                            }}
+                          />
+
+                          {/* Topics grid */}
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            {mod.topics.map((topic, ti) => (
+                              <div
+                                key={ti}
+                                className="rounded-xl p-4 flex flex-col gap-2.5"
+                                style={{
+                                  background: 'rgba(244,243,238,0.8)',
+                                  border: '1px solid rgba(177,173,161,0.3)',
+                                }}
+                              >
+                                {/* Topic header */}
+                                <div className="flex items-start gap-2.5">
+                                  <div
+                                    className="mt-1 w-2 h-2 rounded-full flex-shrink-0"
+                                    style={{ background: '#D97757', boxShadow: '0 0 6px rgba(217,119,87,0.5)' }}
+                                  />
+                                  <h4 className="text-text-primary text-sm font-semibold leading-snug">
+                                    {topic.title}
+                                  </h4>
+                                </div>
+
+                                {/* Points */}
+                                <ul className="flex flex-col gap-1.5 pl-4">
+                                  {topic.points.map((point, pi) => (
+                                    <li key={pi} className="flex items-start gap-2">
+                                      <span
+                                        className="mt-1.5 w-1 h-1 rounded-full flex-shrink-0"
+                                        style={{ background: '#B1ADA1' }}
+                                      />
+                                      <span className="text-text-secondary text-xs leading-relaxed">
+                                        {point}
+                                      </span>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </AnimatedSection>
-            )
-          })}
+                </AnimatedSection>
+              )
+            })}
+          </div>
         </div>
       </div>
 
@@ -287,9 +300,11 @@ export default function CurriculumSection() {
           0% { background-position: 200% center; }
           100% { background-position: -200% center; }
         }
+        @keyframes headingGlow {
+          0%, 100% { filter: drop-shadow(0 0 18px rgba(217,119,87,0.35)) drop-shadow(0 0 40px rgba(217,119,87,0.15)); }
+          50%       { filter: drop-shadow(0 0 32px rgba(217,119,87,0.65)) drop-shadow(0 0 70px rgba(217,119,87,0.3)); }
+        }
       `}</style>
     </section>
   )
 }
-
-

@@ -14,28 +14,27 @@ export const curriculum: CurriculumModule[] = [
   {
     id: 1,
     module: '01',
-    title: 'Foundations of Generative AI & LLM Ecosystem',
+    title: 'Introduction to Claude for DevOps',
     topics: [
       {
-        title: 'Evolution of Artificial Intelligence',
+        title: 'Understanding Claude for Infrastructure Engineering',
         points: [
-          'Rule-based systems → Machine Learning → Deep Learning → Generative AI → Agentic AI',
+          'What Claude brings to DevOps workflows',
+          'AI-native vs traditional infrastructure operations',
         ],
       },
       {
-        title: 'Fundamentals of Large Language Models',
+        title: 'AI-Native DevOps Workflows',
         points: [
-          'Transformer architecture (conceptual overview)',
-          'Training paradigms: pre-training, fine-tuning, alignment',
-          'Capabilities and limitations of modern LLMs',
-          'Understanding hallucinations, bias, and reliability challenges',
+          'Rethinking pipelines with AI assistance',
+          'Setting up AI DevOps workspace',
         ],
       },
       {
-        title: 'Overview of AI Ecosystem',
+        title: 'Prompt Engineering for DevOps Teams',
         points: [
-          'APIs, SDKs, and model providers',
-          'Introduction to key platforms: OpenAI, Anthropic',
+          'Context-aware infrastructure operations',
+          'Crafting effective prompts for infra tasks',
         ],
       },
     ],
@@ -43,28 +42,27 @@ export const curriculum: CurriculumModule[] = [
   {
     id: 2,
     module: '02',
-    title: 'Core Principles of Agentic AI',
+    title: 'Claude for Linux Operations',
     topics: [
       {
-        title: 'Definition and Evolution of Agentic AI',
+        title: 'AI-Generated Linux Commands',
         points: [
-          'Generative AI vs Agentic AI vs Autonomous Systems',
+          'Generating shell commands with Claude',
+          'Intelligent server administration workflows',
         ],
       },
       {
-        title: 'Core Characteristics of AI Agents',
+        title: 'AI-Based Troubleshooting',
         points: [
-          'Goal-oriented behavior',
-          'Decision-making loops',
-          'Context awareness',
+          'Log analysis using Claude',
+          'Diagnosing system issues with AI assistance',
         ],
       },
       {
-        title: 'Agent Lifecycle & Types',
+        title: 'Shell Automation using AI',
         points: [
-          'Input → Reasoning → Action → Feedback → Iteration',
-          'Reactive, deliberative, and hybrid agents',
-          'Use case mapping across industries',
+          'Automating repetitive admin tasks',
+          'Building AI-assisted shell scripts',
         ],
       },
     ],
@@ -72,28 +70,20 @@ export const curriculum: CurriculumModule[] = [
   {
     id: 3,
     module: '03',
-    title: 'LLM System Design & Architecture',
+    title: 'Claude for Git & Repository Engineering',
     topics: [
       {
-        title: 'From Prompts to Systems',
+        title: 'AI-Assisted Git Operations',
         points: [
-          'Architectural thinking beyond single prompts',
-          'Input processing, reasoning, execution, and output validation layers',
+          'Intelligent commit & branch strategies',
+          'Repository workflow automation',
         ],
       },
       {
-        title: 'Workflow & Context Design',
+        title: 'AI-Based Code Review Assistance',
         points: [
-          'Prompt engineering vs system orchestration',
-          'Designing structured workflows using LLMs',
-          'Tokenization and context window management',
-        ],
-      },
-      {
-        title: 'Performance Considerations',
-        points: [
-          'Latency, throughput, and cost trade-offs',
-          'Model selection strategies for different applications',
+          'Automated review suggestions with Claude',
+          'Operational collaboration workflows',
         ],
       },
     ],
@@ -101,28 +91,20 @@ export const curriculum: CurriculumModule[] = [
   {
     id: 4,
     module: '04',
-    title: 'Memory, Context & Knowledge Integration',
+    title: 'Claude for Docker Engineering',
     topics: [
       {
-        title: 'Memory in AI Systems',
+        title: 'AI-Generated Dockerfiles',
         points: [
-          'Ephemeral (session-based) memory',
-          'Persistent (long-term knowledge) memory',
-          'Context management strategies',
+          'Container optimization using Claude',
+          'AI-assisted multi-container workflows',
         ],
       },
       {
-        title: 'Retrieval-Augmented Generation (RAG)',
+        title: 'Intelligent Container Debugging',
         points: [
-          'Conceptual architecture and retrieval mechanisms',
-          'Structured vs unstructured knowledge sources',
-          'Embeddings and semantic search (conceptual)',
-        ],
-      },
-      {
-        title: 'Limitations & Challenges',
-        points: [
-          'Limitations of current memory systems',
+          'Docker troubleshooting with AI',
+          'Diagnosing container failures using Claude',
         ],
       },
     ],
@@ -130,28 +112,20 @@ export const curriculum: CurriculumModule[] = [
   {
     id: 5,
     module: '05',
-    title: 'Tool Usage & AI Workflow Orchestration',
+    title: 'Claude for Advanced Container Operations',
     topics: [
       {
-        title: 'Extending AI with Tools',
+        title: 'AI-Based Container Diagnostics',
         points: [
-          'Role of tools in extending AI capabilities',
-          'API interaction patterns',
-          'Function calling and structured outputs',
+          'Container networking assistance',
+          'AI-driven image optimization',
         ],
       },
       {
-        title: 'Workflow Orchestration',
+        title: 'Autonomous Container Workflow Engineering',
         points: [
-          'Sequential, conditional, and iterative workflows',
-          'Designing reliable AI workflows',
-          'Error handling and fallback strategies',
-        ],
-      },
-      {
-        title: 'Enterprise Integration',
-        points: [
-          'Integration patterns in enterprise systems',
+          'Intelligent deployment suggestions',
+          'End-to-end container lifecycle automation',
         ],
       },
     ],
@@ -159,28 +133,20 @@ export const curriculum: CurriculumModule[] = [
   {
     id: 6,
     module: '06',
-    title: 'Claude & Advanced Model Capabilities',
+    title: 'Claude for Kubernetes Engineering',
     topics: [
       {
-        title: 'Claude Model Family',
+        title: 'AI-Generated Kubernetes YAML',
         points: [
-          'Claude model family overview',
-          'Long-context reasoning and document comprehension',
-          'Structured reasoning and step-by-step outputs',
+          'Intelligent deployment automation',
+          'AI-assisted cluster diagnostics',
         ],
       },
       {
-        title: 'Capabilities & Safety',
+        title: 'Kubernetes Troubleshooting Workflows',
         points: [
-          'Code understanding and generation capabilities',
-          'Safety alignment and controllability',
-        ],
-      },
-      {
-        title: 'Comparative Analysis',
-        points: [
-          'Performance considerations vs OpenAI models',
-          'Use-case suitability and model selection frameworks',
+          'AI-based resource optimization',
+          'Diagnosing pod and node failures with Claude',
         ],
       },
     ],
@@ -188,26 +154,20 @@ export const curriculum: CurriculumModule[] = [
   {
     id: 7,
     module: '07',
-    title: 'Multi-Agent Systems & Coordination',
+    title: 'Claude for Advanced Kubernetes Operations',
     topics: [
       {
-        title: 'Agent Collaboration Models',
+        title: 'AI-Based Pod Failure Analysis',
         points: [
-          'Hierarchical, peer-to-peer, and hybrid coordination',
-          'Task decomposition strategies',
-          'Communication protocols between agents',
+          'Intelligent Kubernetes recovery planning',
+          'Helm template generation using Claude',
         ],
       },
       {
-        title: 'Coordination Challenges',
+        title: 'AI-Assisted Scaling Strategies',
         points: [
-          'Conflicts, redundancy, and synchronization',
-        ],
-      },
-      {
-        title: 'Real-World Applications',
-        points: [
-          'Multi-agent system use cases across industries',
+          'Kubernetes stability optimization',
+          'Autonomous cluster health management',
         ],
       },
     ],
@@ -215,28 +175,20 @@ export const curriculum: CurriculumModule[] = [
   {
     id: 8,
     module: '08',
-    title: 'AI Systems in Production',
+    title: 'Claude for Terraform Engineering',
     topics: [
       {
-        title: 'System Lifecycle',
+        title: 'AI-Generated Terraform Architectures',
         points: [
-          'Design → Development → Deployment → Monitoring → Iteration',
-          'Cloud vs on-premise deployment environments',
-          'Infrastructure considerations (high-level)',
+          'Infrastructure as Code using AI',
+          'Terraform module generation with Claude',
         ],
       },
       {
-        title: 'Observability & Reliability',
+        title: 'AI-Assisted Infrastructure Provisioning',
         points: [
-          'Logging, monitoring, and alerting concepts',
-          'Reliability and fault tolerance',
-        ],
-      },
-      {
-        title: 'Security & Scale',
-        points: [
-          'Scalability and performance optimization',
-          'Security and data privacy considerations',
+          'Infrastructure refactoring using Claude',
+          'Validating IaC with AI assistance',
         ],
       },
     ],
@@ -244,27 +196,20 @@ export const curriculum: CurriculumModule[] = [
   {
     id: 9,
     module: '09',
-    title: 'Evaluation, Testing & Optimization',
+    title: 'Claude for Advanced Infrastructure Automation',
     topics: [
       {
-        title: 'Evaluation Frameworks',
+        title: 'AI-Based Infrastructure Drift Detection',
         points: [
-          'Qualitative vs quantitative evaluation',
-          'Benchmarking AI performance',
+          'Multi-environment infrastructure generation',
+          'Infrastructure lifecycle automation',
         ],
       },
       {
-        title: 'Failure Modes & Validation',
+        title: 'AI-Assisted Cloud Architecture Design',
         points: [
-          'Hallucination, irrelevant outputs, inconsistent reasoning',
-          'Output validation strategies',
-        ],
-      },
-      {
-        title: 'Optimization',
-        points: [
-          'Iterative system improvement approaches',
-          'Cost-performance optimization frameworks',
+          'Intelligent infrastructure governance',
+          'Designing resilient cloud systems with Claude',
         ],
       },
     ],
@@ -272,27 +217,20 @@ export const curriculum: CurriculumModule[] = [
   {
     id: 10,
     module: '10',
-    title: 'Industry Applications of Agentic AI',
+    title: 'Claude for AWS Operations',
     topics: [
       {
-        title: 'Sector Applications',
+        title: 'AI-Assisted AWS Architecture Engineering',
         points: [
-          'Software & SaaS: automation and copilots',
-          'DevOps: intelligent monitoring and workflows',
-          'Customer Support: conversational agents and ticket automation',
+          'Intelligent cloud resource planning',
+          'AI-based infrastructure validation',
         ],
       },
       {
-        title: 'Enterprise & Finance',
+        title: 'Cloud Deployment Optimization',
         points: [
-          'Finance: risk analysis and reporting',
-          'Enterprise Operations: workflow automation and decision systems',
-        ],
-      },
-      {
-        title: 'Case Studies',
-        points: [
-          'Cross-industry case study analysis',
+          'AWS operational intelligence workflows',
+          'Cost-aware deployment strategies with Claude',
         ],
       },
     ],
@@ -300,22 +238,20 @@ export const curriculum: CurriculumModule[] = [
   {
     id: 11,
     module: '11',
-    title: 'Future of Agentic AI & Emerging Trends',
+    title: 'Claude for CI/CD Automation',
     topics: [
       {
-        title: 'Evolution of AI Systems',
+        title: 'AI-Generated CI/CD Pipelines',
         points: [
-          'Rise of AI copilots and digital workers',
-          'Multi-agent ecosystems at scale',
-          'Human-AI collaboration models',
+          'Intelligent build workflow automation',
+          'Deployment workflow engineering',
         ],
       },
       {
-        title: 'Outlook & Ethics',
+        title: 'AI-Assisted Rollback Strategies',
         points: [
-          'Regulatory and ethical considerations',
-          'Future skill requirements in AI engineering',
-          'Industry outlook 2026–2030',
+          'Continuous delivery optimization',
+          'Failure detection and automated recovery',
         ],
       },
     ],
@@ -323,22 +259,188 @@ export const curriculum: CurriculumModule[] = [
   {
     id: 12,
     module: '12',
-    title: 'Strategic Thinking for AI Systems',
+    title: 'Claude for GitHub Actions Engineering',
     topics: [
       {
-        title: 'Product & Strategy',
+        title: 'AI-Generated GitHub Actions Workflows',
         points: [
-          'Designing AI-driven products',
-          'Identifying automation opportunities',
-          'Evaluating feasibility of AI solutions',
+          'Intelligent deployment automation',
+          'AI-based CI/CD troubleshooting',
         ],
       },
       {
-        title: 'Business Decisions',
+        title: 'Multi-Environment Pipeline Generation',
         points: [
-          'Build vs buy decisions in AI adoption',
-          'Cost-benefit analysis of AI systems',
-          'Product thinking in AI engineering',
+          'Workflow optimization using Claude',
+          'Reusable action templates with AI',
+        ],
+      },
+    ],
+  },
+  {
+    id: 13,
+    module: '13',
+    title: 'Claude for Jenkins Automation',
+    topics: [
+      {
+        title: 'AI-Generated Jenkins Pipelines',
+        points: [
+          'Intelligent build automation',
+          'Deployment workflow optimization',
+        ],
+      },
+      {
+        title: 'Pipeline Troubleshooting using AI',
+        points: [
+          'Operational workflow intelligence',
+          'Diagnosing Jenkins failures with Claude',
+        ],
+      },
+    ],
+  },
+  {
+    id: 14,
+    module: '14',
+    title: 'Claude for Production Monitoring',
+    topics: [
+      {
+        title: 'AI-Based Log Correlation',
+        points: [
+          'Intelligent operational diagnostics',
+          'Infrastructure monitoring intelligence',
+        ],
+      },
+      {
+        title: 'AI-Assisted Alert Analysis',
+        points: [
+          'Operational stability engineering',
+          'Reducing alert fatigue with Claude',
+        ],
+      },
+    ],
+  },
+  {
+    id: 15,
+    module: '15',
+    title: 'Claude for Incident Engineering',
+    topics: [
+      {
+        title: 'AI-Powered Root Cause Analysis',
+        points: [
+          'Intelligent incident reconstruction',
+          'Production failure investigation',
+        ],
+      },
+      {
+        title: 'Autonomous Troubleshooting Workflows',
+        points: [
+          'Reliability intelligence systems',
+          'Post-incident reporting with Claude',
+        ],
+      },
+    ],
+  },
+  {
+    id: 16,
+    module: '16',
+    title: 'Claude for Self-Healing Infrastructure',
+    topics: [
+      {
+        title: 'AI-Based Auto Remediation Workflows',
+        points: [
+          'Intelligent rollback systems',
+          'Autonomous recovery automation',
+        ],
+      },
+      {
+        title: 'Infrastructure Stability Optimization',
+        points: [
+          'Predictive operational intelligence',
+          'Designing self-healing pipelines with Claude',
+        ],
+      },
+    ],
+  },
+  {
+    id: 17,
+    module: '17',
+    title: 'Claude for Cloud Cost Optimization',
+    topics: [
+      {
+        title: 'AI-Assisted Infrastructure Cost Analysis',
+        points: [
+          'Resource optimization workflows',
+          'Intelligent scaling recommendations',
+        ],
+      },
+      {
+        title: 'Operational Efficiency Engineering',
+        points: [
+          'AI-based cloud optimization strategies',
+          'FinOps workflows powered by Claude',
+        ],
+      },
+    ],
+  },
+  {
+    id: 18,
+    module: '18',
+    title: 'Claude for Platform Engineering',
+    topics: [
+      {
+        title: 'AI-Native Platform Engineering Concepts',
+        points: [
+          'Intelligent environment standardization',
+          'Infrastructure governance using AI',
+        ],
+      },
+      {
+        title: 'Autonomous Operational Engineering',
+        points: [
+          'Platform workflow automation',
+          'Building internal developer platforms with Claude',
+        ],
+      },
+    ],
+  },
+  {
+    id: 19,
+    module: '19',
+    title: 'Claude Code for DevOps Engineering',
+    topics: [
+      {
+        title: 'Repository-Aware Infrastructure Automation',
+        points: [
+          'AI-assisted operational engineering',
+          'AI-driven codebase intelligence',
+        ],
+      },
+      {
+        title: 'Autonomous Workflow Engineering using Claude Code',
+        points: [
+          'Intelligent infrastructure refactoring',
+          'End-to-end repo-to-deployment automation',
+        ],
+      },
+    ],
+  },
+  {
+    id: 20,
+    module: '20',
+    title: 'Enterprise AI-Native DevOps Systems',
+    topics: [
+      {
+        title: 'Designing AI-Native Operational Architectures',
+        points: [
+          'Autonomous infrastructure engineering',
+          'Intelligent deployment governance',
+        ],
+      },
+      {
+        title: 'AI-Driven Production Operations',
+        points: [
+          'Future of AI-powered DevOps engineering',
+          'Building enterprise-grade AI-native DevOps systems',
         ],
       },
     ],

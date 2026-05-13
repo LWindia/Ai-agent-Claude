@@ -8,12 +8,12 @@ export default function AINetworkSVG() {
       >
         <defs>
           <radialGradient id="nodeGrad1" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stopColor="#38BDF8" stopOpacity="0.9" />
-            <stop offset="100%" stopColor="#2563EB" stopOpacity="0" />
+            <stop offset="0%" stopColor="#D97757" stopOpacity="0.9" />
+            <stop offset="100%" stopColor="#C4623E" stopOpacity="0" />
           </radialGradient>
           <radialGradient id="nodeGrad2" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stopColor="#2563EB" stopOpacity="0.9" />
-            <stop offset="100%" stopColor="#2563EB" stopOpacity="0" />
+            <stop offset="0%" stopColor="#C4623E" stopOpacity="0.9" />
+            <stop offset="100%" stopColor="#C4623E" stopOpacity="0" />
           </radialGradient>
           <filter id="glow">
             <feGaussianBlur stdDeviation="3" result="coloredBlur" />
@@ -25,7 +25,7 @@ export default function AINetworkSVG() {
         </defs>
 
         {/* Connection lines */}
-        <g stroke="rgba(56,189,248,0.25)" strokeWidth="1" fill="none">
+        <g stroke="rgba(217,119,87,0.25)" strokeWidth="1" fill="none">
           <line x1="250" y1="250" x2="120" y2="140" strokeDasharray="4 4">
             <animate attributeName="stroke-opacity" values="0.1;0.5;0.1" dur="3s" repeatCount="indefinite" />
           </line>
@@ -50,16 +50,16 @@ export default function AINetworkSVG() {
         </g>
 
         {/* Traveling data particles */}
-        <circle r="3" fill="#38BDF8" opacity="0.8" filter="url(#glow)">
+        <circle r="3" fill="#D97757" opacity="0.8" filter="url(#glow)">
           <animateMotion dur="3s" repeatCount="indefinite" path="M250,250 L120,140" />
         </circle>
-        <circle r="2.5" fill="#2563EB" opacity="0.8" filter="url(#glow)">
+        <circle r="2.5" fill="#C4623E" opacity="0.8" filter="url(#glow)">
           <animateMotion dur="3.5s" repeatCount="indefinite" path="M250,250 L380,140" />
         </circle>
-        <circle r="2" fill="#38BDF8" opacity="0.7" filter="url(#glow)">
+        <circle r="2" fill="#D97757" opacity="0.7" filter="url(#glow)">
           <animateMotion dur="4s" repeatCount="indefinite" path="M250,250 L100,320" />
         </circle>
-        <circle r="2.5" fill="#2563EB" opacity="0.8" filter="url(#glow)">
+        <circle r="2.5" fill="#C4623E" opacity="0.8" filter="url(#glow)">
           <animateMotion dur="2.8s" repeatCount="indefinite" path="M250,250 L400,320" />
         </circle>
 
@@ -67,33 +67,33 @@ export default function AINetworkSVG() {
         <circle cx="250" cy="250" r="18" fill="url(#nodeGrad1)" filter="url(#glow)">
           <animate attributeName="r" values="16;20;16" dur="3s" repeatCount="indefinite" />
         </circle>
-        <circle cx="250" cy="250" r="8" fill="#38BDF8" opacity="0.9" />
+        <circle cx="250" cy="250" r="8" fill="#D97757" opacity="0.9" />
 
         {/* Outer nodes */}
         <circle cx="120" cy="140" r="10" fill="url(#nodeGrad2)" filter="url(#glow)">
           <animate attributeName="r" values="8;12;8" dur="4s" repeatCount="indefinite" />
         </circle>
-        <circle cx="120" cy="140" r="4" fill="#2563EB" opacity="0.9" />
+        <circle cx="120" cy="140" r="4" fill="#C4623E" opacity="0.9" />
 
         <circle cx="380" cy="140" r="10" fill="url(#nodeGrad1)" filter="url(#glow)">
           <animate attributeName="r" values="8;12;8" dur="3.5s" repeatCount="indefinite" />
         </circle>
-        <circle cx="380" cy="140" r="4" fill="#38BDF8" opacity="0.9" />
+        <circle cx="380" cy="140" r="4" fill="#D97757" opacity="0.9" />
 
         <circle cx="100" cy="320" r="8" fill="url(#nodeGrad2)" filter="url(#glow)">
           <animate attributeName="r" values="6;10;6" dur="5s" repeatCount="indefinite" />
         </circle>
-        <circle cx="100" cy="320" r="3" fill="#2563EB" opacity="0.9" />
+        <circle cx="100" cy="320" r="3" fill="#C4623E" opacity="0.9" />
 
         <circle cx="400" cy="320" r="8" fill="url(#nodeGrad1)" filter="url(#glow)">
           <animate attributeName="r" values="6;10;6" dur="4.2s" repeatCount="indefinite" />
         </circle>
-        <circle cx="400" cy="320" r="3" fill="#38BDF8" opacity="0.9" />
+        <circle cx="400" cy="320" r="3" fill="#D97757" opacity="0.9" />
 
         <circle cx="250" cy="80" r="7" fill="url(#nodeGrad2)" filter="url(#glow)">
           <animate attributeName="r" values="5;9;5" dur="3.8s" repeatCount="indefinite" />
         </circle>
-        <circle cx="250" cy="80" r="3" fill="#2563EB" opacity="0.9" />
+        <circle cx="250" cy="80" r="3" fill="#C4623E" opacity="0.9" />
       </svg>
     </div>
   )

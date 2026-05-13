@@ -64,7 +64,7 @@ function Bracket({ position }: BracketProps) {
         {/* Bracket arms */}
         <polyline
           points={`${e},${o} ${o},${o} ${o},${e}`}
-          stroke="#38BDF8"
+          stroke="#D97757"
           strokeWidth={sw}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -85,7 +85,7 @@ function Bracket({ position }: BracketProps) {
         {/* Corner dot */}
         <circle
           cx={o} cy={o} r={3}
-          fill="#38BDF8"
+          fill="#D97757"
           filter={`url(#glow-${position})`}
         >
           <animate

@@ -5,10 +5,10 @@ import { testimonials } from '../../data'
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-14 px-4 relative overflow-hidden">
+    <section aria-label="Student Testimonials – From Engineers Who Built With Claude" className="py-14 px-4 relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px]"
-          style={{ background: 'radial-gradient(ellipse, rgba(37,99,235,0.07) 0%, transparent 70%)' }} />
+          style={{ background: 'radial-gradient(ellipse, rgba(217,119,87,0.06) 0%, transparent 70%)' }} />
       </div>
       <div className="max-w-7xl mx-auto relative z-10">
         <AnimatedSection>
@@ -23,7 +23,7 @@ export default function TestimonialsSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (
             <AnimatedSection key={t.id} speed={i === 1 ? 'slow' : 'normal'}>
-              <GlassCard className="p-6 flex flex-col gap-5 h-full group hover:border-white/15 transition-all duration-300">
+              <GlassCard className="p-6 flex flex-col gap-5 h-full group hover:border-primary/20 transition-all duration-300">
                 <div className="flex gap-1">
                   {[...Array(t.rating)].map((_, j) => (
                     <svg key={j} className="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
@@ -32,9 +32,9 @@ export default function TestimonialsSection() {
                   ))}
                 </div>
                 <p className="text-text-secondary text-sm leading-relaxed flex-1 group-hover:text-text-primary/80 transition-colors duration-300">"{t.text}"</p>
-                <div className="flex items-center gap-3 pt-2 border-t border-white/8">
+                <div className="flex items-center gap-3 pt-2 border-t border-black/10">
                   <div className="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0"
-                    style={{ background: 'linear-gradient(135deg, #2563EB, #38BDF8)' }}>{t.avatar}</div>
+                    style={{ background: 'linear-gradient(135deg, #D97757, #C4623E)' }}>{t.avatar}</div>
                   <div>
                     <div className="text-text-primary text-sm font-semibold">{t.name}</div>
                     <div className="text-text-secondary text-xs">{t.role}</div>

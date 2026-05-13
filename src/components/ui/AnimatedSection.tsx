@@ -7,7 +7,14 @@ interface Props {
   className?: string
   delay?: number
   style?: CSSProperties
-  speed?: 'normal' | 'slow'
+  speed?: 'fast' | 'normal' | 'slow' | 'dreamy'
+}
+
+const springConfigs = {
+  fast:   { stiffness: 90,  damping: 24 },
+  normal: { stiffness: 55,  damping: 22 },
+  slow:   { stiffness: 35,  damping: 18 },
+  dreamy: { stiffness: 22,  damping: 14 },
 }
 
 export default function AnimatedSection({
@@ -17,11 +24,7 @@ export default function AnimatedSection({
   style,
   speed = 'normal',
 }: Props) {
-  const springConfig = speed === 'slow'
-    ? { stiffness: 40, damping: 18 }
-    : { stiffness: 60, damping: 20 }
-
-  const { ref, y, opacity } = useSectionScroll(springConfig)
+  const { ref, y, opacity } = useSectionScroll(springConfigs[speed])
 
   return (
     <motion.div
@@ -31,7 +34,7 @@ export default function AnimatedSection({
         y,
         opacity,
         willChange: 'transform, opacity',
-        transitionDelay: delay ? `${delay}ms` : undefined,
+        ...(delay ? { transitionDelay: `${delay}ms` } : {}),
         ...style,
       }}
     >

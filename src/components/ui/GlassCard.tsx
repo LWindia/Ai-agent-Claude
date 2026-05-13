@@ -15,8 +15,8 @@ export default function GlassCard({
 }: Props) {
   const hoverGlow =
     glowColor === 'accent'
-      ? 'hover:border-accent/30 hover:shadow-[0_0_25px_rgba(56,189,248,0.15)]'
-      : 'hover:border-primary/40 hover:shadow-[0_0_25px_rgba(37,99,235,0.2)]'
+      ? 'hover:border-primary/30 hover:shadow-[0_0_25px_rgba(217,119,87,0.15)]'
+      : 'hover:border-primary/40 hover:shadow-[0_0_25px_rgba(217,119,87,0.2)]'
 
   return (
     <div

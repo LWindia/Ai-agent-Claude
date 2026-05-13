@@ -9,7 +9,7 @@ export default function GlowOrbs() {
           height: '600px',
           top: '-200px',
           right: '-150px',
-          background: 'radial-gradient(circle, rgba(37,99,235,0.18) 0%, rgba(37,99,235,0.06) 40%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(217,119,87,0.15) 0%, rgba(217,119,87,0.05) 40%, transparent 70%)',
           borderRadius: '50%',
           animationDelay: '0s',
         }}
@@ -22,7 +22,7 @@ export default function GlowOrbs() {
           height: '400px',
           top: '30%',
           left: '-100px',
-          background: 'radial-gradient(circle, rgba(56,189,248,0.12) 0%, rgba(56,189,248,0.04) 40%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(196,98,62,0.1) 0%, rgba(196,98,62,0.03) 40%, transparent 70%)',
           borderRadius: '50%',
           animationDelay: '1.5s',
         }}
@@ -35,7 +35,7 @@ export default function GlowOrbs() {
           height: '300px',
           bottom: '-50px',
           left: '40%',
-          background: 'radial-gradient(circle, rgba(37,99,235,0.1) 0%, rgba(56,189,248,0.05) 40%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(217,119,87,0.08) 0%, rgba(196,98,62,0.04) 40%, transparent 70%)',
           borderRadius: '50%',
           animationDelay: '3s',
         }}

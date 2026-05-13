@@ -4,13 +4,13 @@ import SectionHeading from '../ui/SectionHeading'
 
 export default function FinalCTASection() {
   return (
-    <section className="py-14 px-4 relative overflow-hidden">
+    <section aria-label="Enroll Now – Start Automating Infrastructure with Claude AI" className="py-14 px-4 relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0"
-          style={{ background: 'radial-gradient(ellipse at center, rgba(37,99,235,0.1) 0%, transparent 65%)' }} />
+          style={{ background: 'radial-gradient(ellipse at center, rgba(217,119,87,0.08) 0%, transparent 65%)' }} />
         <div className="absolute inset-0 opacity-25"
           style={{
-            backgroundImage: `linear-gradient(rgba(37,99,235,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(37,99,235,0.08) 1px, transparent 1px)`,
+            backgroundImage: `linear-gradient(rgba(217,119,87,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(217,119,87,0.06) 1px, transparent 1px)`,
             backgroundSize: '60px 60px',
           }} />
       </div>
@@ -18,10 +18,10 @@ export default function FinalCTASection() {
         <AnimatedSection>
           <div className="flex flex-col items-center gap-6">
             <SectionHeading
-              label="Limited Enrollment Open"
-              title="Start Building the Future with AI"
-              highlight="Future with AI"
-              subtitle="Join 2,400+ engineers designing, building, and scaling real-world AI systems. The agentic AI era is here — be the architect, not just the user."
+              label="Enrollment Open Now"
+              title="Start Automating Infrastructure with AI"
+              highlight="Automating Infrastructure"
+              subtitle="Join 2,400+ engineers who are using Claude to automate DevOps, ship faster, and operate smarter. The AI-native DevOps era is here — be ahead of it."
             />
             <div className="flex flex-wrap gap-4 justify-center mt-2">
               <Button variant="primary" size="lg" href="#pricing">

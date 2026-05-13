@@ -35,7 +35,7 @@ export default function FloatingCards() {
           style={{ animationDelay: card.delay }}
         >
           <div className="glass rounded-xl px-4 py-3 flex items-center gap-3 min-w-[160px] shadow-card">
-            <div className="w-9 h-9 rounded-lg bg-primary/20 border border-primary/30 flex items-center justify-center text-lg flex-shrink-0">
+            <div className="w-9 h-9 rounded-lg bg-primary/15 border border-primary/25 flex items-center justify-center text-lg flex-shrink-0">
               {card.icon}
             </div>
             <div>
