@@ -3,16 +3,28 @@ import { motion, useScroll, useTransform, MotionValue } from 'framer-motion'
 
 // Three rows of tech terms — alternating scroll directions
 const row1 = [
-  'Linux', 'Git', 'Docker', 'Kubernetes', 'Terraform', 'AWS', 'CI/CD', 'Jenkins',
-  'GitHub Actions', 'Claude AI', 'DevOps', 'Infrastructure as Code',
+  'AI-Driven Infrastructure Automation', 'Intelligent Operations Engineering', 'AI-Native DevOps Workflows',
+  'Prompt Engineering for DevOps', 'Context-Aware Infrastructure Operations', 'Intelligent Server Administration',
+  'AI-Based Troubleshooting Workflows', 'Infrastructure Automation using AI', 'Repository Workflow Engineering',
+  'Operational Collaboration Systems', 'Container Optimization Strategies', 'Intelligent Container Debugging',
+  'Autonomous Container Operations', 'Kubernetes Deployment Automation',
 ]
 const row2 = [
-  'Container Orchestration', 'Helm Charts', 'Incident Engineering', 'Self-Healing Infra',
-  'Cloud Cost Optimization', 'Platform Engineering', 'Claude Code', 'AI-Native DevOps',
+  'AI-Assisted Cluster Diagnostics', 'Kubernetes Stability Engineering', 'Infrastructure as Code Automation',
+  'Terraform Module Engineering', 'Infrastructure Lifecycle Automation', 'Intelligent Cloud Architecture Design',
+  'AI-Assisted AWS Operations', 'Cloud Deployment Optimization', 'CI/CD Workflow Automation',
+  'Intelligent Build & Release Engineering', 'Multi-Environment Pipeline Automation', 'Deployment Workflow Intelligence',
+  'Production Monitoring Intelligence', 'AI-Based Log Correlation',
 ]
 const row3 = [
-  'Kubernetes YAML', 'Terraform Modules', 'CI/CD Pipelines', 'Log Correlation',
-  'Auto Remediation', 'Root Cause Analysis', 'AWS Architecture', 'Intelligent Operations',
+  'Operational Diagnostics Engineering', 'AI-Powered Incident Response', 'Root Cause Analysis Automation',
+  'Autonomous Troubleshooting Systems', 'Self-Healing Infrastructure', 'AI-Based Auto Remediation',
+  'Predictive Operational Intelligence', 'Infrastructure Cost Optimization', 'Intelligent Scaling Recommendations',
+  'Platform Engineering Automation', 'Infrastructure Governance using AI', 'Repository-Aware Automation',
+  'AI-Driven Codebase Intelligence', 'Autonomous Workflow Engineering', 'Enterprise AI-Native DevOps Systems',
+  'Intelligent Deployment Governance', 'Future of AI-Powered DevOps', 'Reliability Engineering with AI',
+  'Infrastructure Refactoring Automation', 'Cloud Resource Optimization', 'Operational Stability Engineering',
+  'AI-Assisted Recovery Planning', 'Infrastructure Monitoring Intelligence',
 ]
 
 // Repeat items enough to fill wide screens seamlessly
