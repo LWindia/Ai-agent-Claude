@@ -5,6 +5,7 @@ interface Props {
   children: ReactNode
   onClick?: () => void
   href?: string
+  target?: string
   className?: string
   size?: 'sm' | 'md' | 'lg'
   'aria-label'?: string
@@ -15,6 +16,7 @@ export default function Button({
   children,
   onClick,
   href,
+  target,
   className = '',
   size = 'md',
   'aria-label': ariaLabel,
@@ -48,8 +50,15 @@ export default function Button({
   const classes = `${baseClasses} ${variantClasses} ${className}`.trim()
 
   if (href) {
+    const isExternal = href.startsWith('http')
     return (
-      <a href={href} className={classes} aria-label={ariaLabel}>
+      <a
+        href={href}
+        className={classes}
+        aria-label={ariaLabel}
+        target={target ?? (isExternal ? '_blank' : undefined)}
+        rel={isExternal ? 'noopener noreferrer' : undefined}
+      >
         {children}
       </a>
     )

@@ -108,7 +108,8 @@ export default function PricingSection() {
                 <Button
                   variant="primary"
                   size="lg"
-                  href="#"
+                  href="https://rzp.io/rzp/claude-for-devops2026"
+                  target="_blank"
                   className="w-full justify-center"
                   aria-label="Enroll in Claude for DevOps – ₹6,999 + taxes"
                 >

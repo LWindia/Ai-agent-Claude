@@ -42,7 +42,7 @@ function TestimonialCard({ t, delay = 0 }: { t: typeof orderedTestimonials[0]; d
 
 export default function TestimonialsSection() {
   return (
-    <section aria-label="Student Testimonials – From Engineers Who Built With Claude" className="py-14 px-4 relative overflow-hidden">
+    <section aria-label="Student Testimonials – From Engineers Who Built With Claude" className="py-10 px-4 relative overflow-hidden">
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px]"
           style={{ background: 'radial-gradient(ellipse, rgba(217,119,87,0.06) 0%, transparent 70%)' }} />
@@ -50,7 +50,7 @@ export default function TestimonialsSection() {
 
       <div className="max-w-7xl mx-auto relative z-10">
         <AnimatedSection>
-          <div className="flex flex-col items-center mb-12">
+          <div className="flex flex-col items-center mb-8">
             <SectionHeading
               label="Testimonials"
               title="From Engineers Who Built With It"
@@ -78,7 +78,7 @@ export default function TestimonialsSection() {
 
         {/* "& many more" footer with real student photos */}
         <AnimatedSection speed="slow">
-          <div className="mt-12 flex flex-col items-center gap-4">
+          <div className="mt-6 flex flex-col items-center gap-3">
 
             {/* Student photo circles — same style as MentorSection */}
             <div className="flex items-center justify-center gap-4">
@@ -104,11 +104,6 @@ export default function TestimonialsSection() {
                 </div>
               ))}
             </div>
-
-            {/* Label */}
-            <p className="text-text-secondary text-sm font-medium text-center">
-              Engineering Students &amp; Working Professionals
-            </p>
 
             {/* & many more */}
             <p
